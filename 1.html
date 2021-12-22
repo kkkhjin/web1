@@ -3,19 +3,79 @@
 <head>
 <title>Chocolate - 나무위키</title>
 <meta charset="utf-8">
+<style>
+    body{
+        margin:0;
+    }
+    a {
+        color:black;
+        text-decoration: none;
+    }
+    .saw {
+        color:gray;
+    }
+    #active{
+        color:red;
+    }
+    h1 {
+        font-size:50px;
+        text-align:center;
+        border-bottom:5px solid gray;
+        margin:0;
+        padding:20px;
+    }
+    #grid ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0%;
+        padding-left:33px;
+        padding-top: 25px;
+    }
+    #article {
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    #grid {
+        display:grid;
+        grid-template-columns: 150px 1fr;
+    }
+    @media(max-width:740px){
+        #grid ol {
+            border-right: none;
+        }
+        #grid{
+            display:block;
+        }
+    }
+</style>
 </head>
 <body>
 <h1><a href="index.html">Sugar</a></h1>
-<ol>
-    <li><a href="1.html">chocolate</a></li>
-    <li><a href="2.html">cake</a></li>
-    <li><a href="3.html">candy</a></li>
-</ol>
-<h2>Chocolate이란 무엇인가?</h2>
-<p>초콜릿은 카카오 콩을 정제한 카카오매스에 설탕 등을 첨가해 만든 달콤한 맛의 과자이다. 음료화한 상태인 핫초코로 마시거나 고체로 굳혀 먹으며, 이외에도 여러 디저트의 재료로 사용된다. 초콜릿을 전문적으로 만드는 사람을 <strong><u>쇼콜라티에</u>(chocolatier)</strong>라고 부른다.</p>
-<img src="chocolate.jfif" width="100%"">
-<p style="margin: top 45px;">'초콜릿(Chocolate)'이란 이름 자체는 멕시코 메시카 족이 카카오 빈과 고추로 만든 음료인 나후아틀어로 쓴 물을 뜻하는 쇼콜라틀(Xocolatl)에서 유래됐다. 쇼콜라틀은 지금도 멕시코에서 먹어볼 순 있지만, 매우 쓰니 부디 신중히 맛을 보도록 하자.<br><br>
-초콜릿의 원료인 카카오의 원산지는 남아메리카의 아마존 강 유역과 베네수엘라의 오리노코강 유역으로 일컬어진다. 현재도 베네수엘라에서 생산되는 카카오는 최상품으로 취급되고, 베네수엘라 자체도 석유채굴이 시작되기 이전에는 농업으로 먹고살던 국가였다. 그렇지만 석유채굴과 이후의 이촌향도 현상, 상당수의 토지를 목축지로 사용되고있기 때문에 현대 베네수엘라/경제에서 농업이 차지하는 비중이 매우 낮은 편이다.</p>
-<p><a href="https://namu.wiki/w/%EC%B4%88%EC%BD%9C%EB%A6%BF">출처 - 나무위키</a></p>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">chocolate</a></li>
+        <li><a href="2.html">cake</a></li>
+        <li><a href="3.html">candy</a></li>
+    </ol>
+    <!--
+    <h1><a href="index.html"><font color="red">Sugar</font></a></h1>
+    <ol>
+        <li><a href="1.html"><font color="red">chocolate</font></a></li>
+        <li><a href="2.html"><font color="red">cake</font></a></li>
+        <li><a href="3.html"><font color="red">candy</font></a></li>
+    </ol>
+    -->
+    <div id="article">
+        <h2>Chocolate이란 무엇인가?</h2>
+        <p>초콜릿은 카카오 콩을 정제한 카카오매스에 설탕 등을 첨가해 만든 달콤한 맛의 과자이다. 음료화한 상태인 핫초코로 마시거나 고체로 굳혀 먹으며, 이외에도 여러 디저트의 재료로 사용된다. 초콜릿을 전문적으로 만드는 사람을 <strong><u>쇼콜라티에</u>(chocolatier)</strong>라고 부른다.</p>
+        <img src="chocolate.jfif" width="100%"">
+        <p style="margin: top 45px;">'초콜릿(Chocolate)'이란 이름 자체는 멕시코 메시카 족이 카카오 빈과 고추로 만든 음료인 나후아틀어로 쓴 물을 뜻하는 쇼콜라틀(Xocolatl)에서 유래됐다. 쇼콜라틀은 지금도 멕시코에서 먹어볼 순 있지만, 매우 쓰니 부디 신중히 맛을 보도록 하자.<br><br>
+        초콜릿의 원료인 카카오의 원산지는 남아메리카의 아마존 강 유역과 베네수엘라의 오리노코강 유역으로 일컬어진다. 현재도 베네수엘라에서 생산되는 카카오는 최상품으로 취급되고, 베네수엘라 자체도 석유채굴이 시작되기 이전에는 농업으로 먹고살던 국가였다. 그렇지만 석유채굴과 이후의 이촌향도 현상, 상당수의 토지를 목축지로 사용되고있기 때문에 현대 베네수엘라/경제에서 농업이 차지하는 비중이 매우 낮은 편이다.</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/igzAhozJqv0?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><a href="https://namu.wiki/w/%EC%B4%88%EC%BD%9C%EB%A6%BF">출처 - 나무위키</a></p>
+    </div>
+</div>
 </body>
 </html>
